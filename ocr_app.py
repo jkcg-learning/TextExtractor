@@ -26,7 +26,7 @@ def load_model():
     if framework == "EasyOCR":
 
         if 'English' or 'French' or 'Dutch' or 'German' in language:
-            model = easyocr.Reader(lang_list=['en', 'fr', 'nl', 'de'], model_storage_directory='models/easyocr')
+            model = easyocr.Reader(lang_list=['en', 'fr', 'nl', 'de'], model_storage_directory='models/easyocr', gpu = False)
         else:
             print("Easyocr model not loaded. Check the language support!!!")
 
