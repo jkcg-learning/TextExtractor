@@ -26,7 +26,8 @@ def load_model():
     if framework == "EasyOCR":
 
         if 'English' or 'French' or 'Dutch' or 'German' in language:
-            model = easyocr.Reader(lang_list=['en', 'fr', 'nl', 'de'], model_storage_directory='models/easyocr', gpu = False)
+            model = easyocr.Reader(lang_list=['en', 'fr', 'nl', 'de'], model_storage_directory='models/easyocr',
+                                   gpu=False)
         else:
             print("Easyocr model not loaded. Check the language support!!!")
 
@@ -69,7 +70,7 @@ def display_output_image_with_bbox_text(results):
             pts = pts.reshape((-1, 1, 2))
 
             rec_result = text
-            #print(recResult)
+            # print(recResult)
 
             # Get scaled values.
             box_height = int((abs((box[0][1] - box[3][1]))))
