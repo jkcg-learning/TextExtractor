@@ -1,11 +1,17 @@
 # TextExtractor
 App to extract text from images
 
-## How To Run App
+## Launch Deployed App
 
-streamlit run ocr_app.py
+https://share.streamlit.io/jkcg-learning/textextractor/ocr_app.py
 
-Local URL: http://localhost:8501
+## How To Run App in Local
+
+- Clone this repository
+
+- streamlit run ocr_app.py
+
+- Local URL: http://localhost:8501
 
 ## UI
 
