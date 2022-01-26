@@ -5,6 +5,8 @@ App to extract text from images
 
 https://share.streamlit.io/jkcg-learning/textextractor/ocr_app.py
 
+![Demo](app_files/streamlit-ocr_app.gif)
+
 ## How To Run App in Local
 
 - Clone this repository
